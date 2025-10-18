@@ -16,7 +16,7 @@ let app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://lms-3-103q.onrender.com",
     credentials:true
 }))
 app.use("/api/auth", authRouter)
@@ -35,4 +35,5 @@ app.listen(port , ()=>{
     console.log("Server Started")
     connectDb()
 })
+
 
