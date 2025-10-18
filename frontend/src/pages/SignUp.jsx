@@ -105,7 +105,7 @@ function SignUp() {
 
             </div>
             <div className='w-[50%] h-[100%] rounded-r-2xl bg-[black] md:flex items-center justify-center flex-col hidden'><img src={logo} className='w-30 shadow-2xl' alt="" />
-            <span className='text-[white] text-2xl'>VIRTUAL COURSES</span>
+            <span className='text-[white] text-2xl'>Skill Sphere</span>
             </div>
            
         </form>
@@ -115,3 +115,4 @@ function SignUp() {
 }
 
 export default SignUp
+
