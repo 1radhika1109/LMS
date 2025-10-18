@@ -13,12 +13,17 @@ const getCurrentUser = ()=>{
                 dispatch(setUserData(result.data))
 
             } catch (error) {
-                console.log(error)
-                dispatch(setUserData(null))
+                if (error.response?.status === 401) {
+                    dispatch(setUserData(null))  
+                } else {
+                    console.log("Authentication error:", error) 
+                    dispatch(setUserData(null))
+                }
             }
         }
         fetchUser()
     },[])
 }
+
 
 export default getCurrentUser
