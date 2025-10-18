@@ -6,9 +6,10 @@ function VideoPlayer() {
     <div className="max-w-[350px] mx-auto p-4 absolute top-[55%] left-[50%]">
       <video
         src={myVideo}
-        autoPlay
         loop
         controls
+        muted       
+        playsInline 
         className="w-full rounded-xl shadow-lg  border-2 border-white"
         
       >
@@ -19,3 +20,4 @@ function VideoPlayer() {
 }
 
 export default VideoPlayer;
+
